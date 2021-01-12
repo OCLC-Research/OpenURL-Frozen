@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../openurl/openurl.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-01-12T21:51:07Z</responseDate><request metadataPrefix="oai_dc" verb="ListRecords" set="Core:Namespaces">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><ListRecords>
+    <record><header><identifier>info:ofi/</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for OpenURL Framework Registry Identifiers</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:ofi/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:ofi/.reg</dc:identifier>
+        <dc:identifier>info:ofi/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/enc:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for Registry Identifiers of Character Encodings</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:description>The names for all character encodings in this namespace must be from the IANA official names for character sets located at http://www.iana.org/assignments/character-sets.</dc:description>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for the identification of ContextObject Formats, Metadata Formats, Physical Representations, and Constraint Languages</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for Registry Identifiers of Namespaces.</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:data:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;data&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2397.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:ftp:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;ftp&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc959.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:http:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;http&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2616.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:https:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;https&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2818.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;info&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/internet-drafts/draft-vandesompel-info-uri-02.txt</dc:identifier>
+        <dc:date>2004-07-09</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:bibcode:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of Astrophysics Bibcodes</dc:title>
+        <dc:creator>NASA</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/.reg</dc:identifier>
+        <dc:identifier>info:bibcode/</dc:identifier>
+        <dc:description>Namespace of identifiers that follow the Astrophysics Data System Bibcode scheme.</dc:description>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:doi:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of Digital Object Identifiers</dc:title>
+        <dc:creator>International DOI Foundation</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:doi/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:doi/.reg</dc:identifier>
+        <dc:identifier>info:doi/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:hdl:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for CNRI handles</dc:title>
+        <dc:creator>CNRI</dc:creator>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3650.txt</dc:identifier>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3651.txt</dc:identifier>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3652.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:lccn:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of Library of Congress Control Numbers</dc:title>
+        <dc:creator>Library of Congress</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:lccn/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:lccn/.reg</dc:identifier>
+        <dc:identifier>info:lccn/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:oai:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of OAI Identifiers</dc:title>
+        <dc:creator>The Open Archives Initiative</dc:creator>
+        <dc:identifier>http://www.openarchives.org/OAI/2.0/guidelines-oai-identifier.htm</dc:identifier>
+        <dc:description>Namespace for Identifiers that follow the syntax of OAI Identifiers.</dc:description>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:oclcnum:</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of identifiers assigned by OCLC to records in the WorldCat database</dc:title>
+        <dc:creator>OCLC</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:oclcnum/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:oclcnum/.reg</dc:identifier>
+        <dc:identifier>info:oclcnum/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:pmid:</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of PubMed Identifiers</dc:title>
+        <dc:creator>NCBI</dc:creator>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:pmid/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:pmid/.reg</dc:identifier>
+        <dc:identifier>info:pmid/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:sici:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace of SICI Codes</dc:title>
+        <dc:creator>NISO</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:description>Namespace for identifiers that follow the Serial Item and Contribution Identifier (SICI) scheme (ANSI/NISO Z39.56-1996 Version 2)</dc:description>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/.reg</dc:identifier>
+        <dc:identifier>info:sici/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:info:sid:</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for identifiers that follow the info:sid scheme</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:description>Namespace for identifiers that follow the info:sid scheme, mainly
+            used for the identification of the Referrer Entity.</dc:description>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/?metadataPrefix=reg</dc:identifier>
+        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/.reg</dc:identifier>
+        <dc:identifier>info:sid/</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:ldap:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;ldap&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2255.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:mailto:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;mailto&quot; URI Scheme</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2368.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:urn:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;urn&quot; URI Scheme</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2141.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:urn:ISBN:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;ISBN&quot; URN Namespace</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3187.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:urn:ISSN:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for &quot;ISSN&quot; URN Namespace</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3044.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/nam:urn:NBN:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace for National Bibliographic Number  URN Namespace</dc:title>
+        <dc:identifier>http://www.ietf.org/rfc/rfc3188.txt</dc:identifier>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for Registry Identifiers of Community Profiles</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/req:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/res:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/rfe:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/rfr:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard. </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/rft:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/svc:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace and sub-Namespaces reserved by the Z39.88-2004 Standard </dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/tsp:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Namespace reserved for Registry Identifiers of Transports</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:type>Core:Namespaces</dc:type>
+    </oai_dc:dc></metadata></record>
+</ListRecords></OAI-PMH>
