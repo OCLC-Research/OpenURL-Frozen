@@ -1,0 +1,9 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>Key/Encoded-Value Metadata Format for Canonical Citations</dc:title>
+    <dc:creator>David Ruddy, Cornell University Library</dc:creator>
+    <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:canonical_cit</dc:identifier>
+    <dc:identifier>http://www.openurl.info/registry/docs/pdf/canonical_cit-2011-04-26.pdf</dc:identifier>
+    <dc:date>2010-11-15</dc:date>
+    <dc:description>This Matrix represents the Canonical Citation Format as a string of ampersand-delimited Key/Encoded Value pairs</dc:description>
+    <dc:type>Core:Metadata Formats</dc:type>
+</oai_dc:dc>

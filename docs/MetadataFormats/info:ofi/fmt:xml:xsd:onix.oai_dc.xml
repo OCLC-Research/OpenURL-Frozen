@@ -1,0 +1,8 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>EDItEUR Onix for Books XML Metadata Format Schema version 2.1</dc:title>
+    <dc:creator>EDItEUR</dc:creator>
+    <dc:date>2007-09-21</dc:date>
+    <dc:identifier>http://www.editeur.org/onix/2.1/reference/ONIX_BookProduct_Release2.1_reference.xsd</dc:identifier>
+    <dc:description>The ONIX for Books Product Information Message is the international standard for representing and communicating book industry product information in electronic form. See: http://www.editeur.org/onix.html.</dc:description>
+    <dc:type>Core:Metadata Formats</dc:type>
+</oai_dc:dc>

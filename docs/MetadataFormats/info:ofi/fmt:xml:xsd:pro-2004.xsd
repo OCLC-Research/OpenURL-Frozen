@@ -1,0 +1,123 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="info:ofi/pro-2004" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/pro-2004" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining Format to represent Community Profiles. Validated with XML Spy Professional 2004 on November 17th 2004. This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:pro</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>Community Profile Format 2004</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:creator>Herbert Van de Sompel</dc:creator>
+            <dc:description>This XML Schema defines a Format to unambigiously express Community Profiles as an XML document</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:pro</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:pro</dc:identifier>
+            <dcterms:created>2004-12-30</dcterms:created>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="profile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="registry-identifier" type="registryIdentifierType"/>
+                <xs:element name="name" type="nameType"/>
+                <xs:element name="context-object-format" type="ContextObjectFormatType"/>
+                <xs:element name="format" type="CoreComponentType"/>
+                <xs:element name="serialization" type="CoreComponentType"/>
+                <xs:element name="constraint-language" type="CoreComponentType"/>
+                <xs:element name="character-encodings">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="character-encoding" maxOccurs="unbounded" type="CoreComponentType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="metadata-formats">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="metadata-format" maxOccurs="unbounded" type="CoreComponentType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="namespaces">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="namespace" maxOccurs="unbounded" type="CoreComponentType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="transports">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="transport" maxOccurs="unbounded" type="CoreComponentType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="CoreComponentType">
+        <xs:sequence>
+            <xs:element name="registry-identifier" type="registryIdentifierType"/>
+            <xs:element name="name" type="nameType"/>
+        </xs:sequence>
+        <xs:attribute name="type" fixed="default" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="ContextObjectFormatType">
+        <xs:sequence>
+            <xs:element name="context-object">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="referent" type="EntityType"/>
+                        <xs:element name="referring-entity" type="EntityType"/>
+                        <xs:element name="requester" type="EntityType"/>
+                        <xs:element name="service-type" type="EntityType"/>
+                        <xs:element name="resolver" type="EntityType"/>
+                        <xs:element name="referrer" type="EntityType"/>
+                    </xs:sequence>
+                    <xs:attributeGroup ref="Occurs"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EntityType">
+        <xs:sequence>
+            <xs:element name="identifier" type="DescriptorType"/>
+            <xs:element name="by-value-metadata" type="DescriptorType"/>
+            <xs:element name="by-reference-metadata" type="DescriptorType"/>
+            <xs:element name="private-data" type="DescriptorType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="Occurs"/>
+    </xs:complexType>
+    <xs:complexType name="DescriptorType">
+        <xs:attributeGroup ref="Occurs"/>
+    </xs:complexType>
+    <xs:attributeGroup name="Occurs">
+        <xs:attribute name="minOccurs" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0"/>
+                    <xs:enumeration value="1"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="maxOccurs" use="required">
+            <xs:simpleType>
+                <xs:union>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                        </xs:restriction>
+                    </xs:simpleType>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="unbounded"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:union>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:simpleType name="registryIdentifierType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="info:ofi/.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,7 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>Open Archives Initiative Unqualified Dublin Core</dc:title>
+    <dc:creator>Dublin Core Metadata Initiative</dc:creator>
+    <dc:creator>The Open Archives Initiative</dc:creator>
+    <dc:identifier>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</dc:identifier>
+    <dc:type>Core:Metadata Formats</dc:type>
+</oai_dc:dc>

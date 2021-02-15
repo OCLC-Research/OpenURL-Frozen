@@ -1,0 +1,172 @@
+<profile xmlns="info:ofi/pro-2004" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:ofi/pro-2004 http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:pro-2004">
+    <registry-identifier>info:ofi/pro:canonical_cit</registry-identifier>
+    <name>Canonical Citation Community Profile</name>
+    <context-object-format>
+        <context-object minOccurs="1" maxOccurs="1">
+            <referent minOccurs="1" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </referent>
+            <referring-entity minOccurs="0" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </referring-entity>
+            <requester minOccurs="0" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </requester>
+            <service-type minOccurs="0" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </service-type>
+            <resolver minOccurs="0" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </resolver>
+            <referrer minOccurs="0" maxOccurs="1">
+                <identifier minOccurs="0" maxOccurs="unbounded"/>
+                <by-value-metadata minOccurs="0" maxOccurs="1"/>
+                <by-reference-metadata minOccurs="0" maxOccurs="1"/>
+                <private-data minOccurs="0" maxOccurs="1"/>
+            </referrer>
+        </context-object>
+    </context-object-format>
+    <format>
+        <registry-identifier>info:ofi/fmt:kev:mtx:ctx</registry-identifier>
+        <name>Key/Encoded-Value ContextObject Format</name>
+    </format>
+    <serialization>
+        <registry-identifier>info:ofi/fmt:kev</registry-identifier>
+        <name>Key/Encoded-Value Physical Representation</name>
+    </serialization>
+    <constraint-language>
+        <registry-identifier>info:ofi/fmt:kev:mtx</registry-identifier>
+        <name>NISO Z39.88-2004 Matrix Constraint Language</name>
+    </constraint-language>
+    <character-encodings>
+        <character-encoding type="default">
+            <registry-identifier>info:ofi/enc:UTF-8</registry-identifier>
+            <name>UTF-8 encoded Unicode</name>
+        </character-encoding>
+        <character-encoding>
+            <registry-identifier>info:ofi/enc:ISO-8859-1</registry-identifier>
+            <name>ISO Latin 1</name>
+        </character-encoding>
+    </character-encodings>
+    <metadata-formats>
+        <metadata-format>
+            <registry-identifier>info:ofi/fmt:kev:mtx:canonical_cit</registry-identifier>
+            <name>KEV Canonical Citation Format</name>
+        </metadata-format>
+        <metadata-format>
+            <registry-identifier>info:ofi/fmt:kev:mtx:book</registry-identifier>
+            <name>KEV Metadata Format for Books</name>
+        </metadata-format>
+        <metadata-format>
+            <registry-identifier>info:ofi/fmt:kev:mtx:journal</registry-identifier>
+            <name>KEV Metadata Format for Journals</name>
+        </metadata-format>
+        <metadata-format>
+            <registry-identifier>info:ofi/fmt:kev:mtx:dissertation</registry-identifier>
+            <name>KEV Metadata Format for Dissertations</name>
+        </metadata-format>
+        <metadata-format>
+            <registry-identifier>info:ofi/fmt:kev:mtx:sch_svc</registry-identifier>
+            <name>KEV Metadata Format for ServiceTypes for the Scholarly Community</name>
+        </metadata-format>
+    </metadata-formats>
+    <namespaces>
+        <namespace>
+            <registry-identifier>info:ofi/nam:http:</registry-identifier>
+            <name>Namespace for "http" URI Scheme</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:https:</registry-identifier>
+            <name>Namespace for "https" URI Scheme</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:mailto:</registry-identifier>
+            <name>Namespace for "mailto" URI Scheme</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:ldap:</registry-identifier>
+            <name>Namespace for "ldap" URI Scheme</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:ftp:</registry-identifier>
+            <name>Namespace for "ftp" URI Scheme</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:urn:ISSN:</registry-identifier>
+            <name>Namespace for "ISSN" URN Namespace</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:urn:ISBN:</registry-identifier>
+            <name>Namespace for "ISBN" URN Namespace</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:urn:NBN:</registry-identifier>
+            <name>Namespace for National Bibliographic Number URN </name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:hdl:</registry-identifier>
+            <name>Namespace for CNRI handles</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:doi:</registry-identifier>
+            <name>Namespace for Digital Object Identifiers</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:bibcode:</registry-identifier>
+            <name>Namespace for Astrophysics Bibcodes</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:pmid:</registry-identifier>
+            <name>Namespace for PubMed Identifiers</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:oai:</registry-identifier>
+            <name>Namespace for OAI Identifiers</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:sici:</registry-identifier>
+            <name>Namespace for SICI codes</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:oclcnum:</registry-identifier>
+            <name>Namespace for identifiers assigned by OCLC to records in the WorldCat database</name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:sid:</registry-identifier>
+            <name>Namespace for identifiers that follow the info:sid scheme. Mainly used for the Referrer Entity </name>
+        </namespace>
+        <namespace>
+            <registry-identifier>info:ofi/nam:info:lccn:</registry-identifier>
+            <name>Namespace of Library of Congress Control Numbers</name>
+        </namespace>
+    </namespaces>
+    <transports>
+        <transport>
+            <registry-identifier>info:ofi/tsp:http:openurl-by-val</registry-identifier>
+            <name>By-Value OpenURL over HTTP</name>
+        </transport>
+        <transport>
+            <registry-identifier>info:ofi/tsp:http:openurl-by-ref</registry-identifier>
+            <name>By-Reference OpenURL over HTTP</name>
+        </transport>
+        <transport>
+            <registry-identifier>info:ofi/tsp:http:openurl-inline</registry-identifier>
+            <name>Inline OpenURL over HTTP</name>
+        </transport>
+    </transports>
+</profile>

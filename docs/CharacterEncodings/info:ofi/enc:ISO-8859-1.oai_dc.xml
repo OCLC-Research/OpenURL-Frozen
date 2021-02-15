@@ -1,0 +1,8 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>ISO Latin 1</dc:title>
+    <dc:creator>ISO</dc:creator>
+    <dc:description>The registered Character Encoding that references the IANA character set with the Name ISO-8859-1 (Latin-1).</dc:description>
+    <dc:identifier>ISO/IEC 8859-1:1987</dc:identifier>
+    <dc:identifier>http://www.ietf.org/rfc/rfc1345.txt</dc:identifier>
+    <dc:type>Core:Character Encodings</dc:type>
+</oai_dc:dc>

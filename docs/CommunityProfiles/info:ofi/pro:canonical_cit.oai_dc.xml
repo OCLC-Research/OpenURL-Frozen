@@ -1,0 +1,9 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>Canonical Citation Community Profile</dc:title>
+    <dc:creator>David Ruddy, Cornell University Library</dc:creator>
+    <dc:date>2011-03-30</dc:date>
+    <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:canonical_cit</dc:identifier>
+    <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/pdf/canonical_cit-2011-04-26.pdf</dc:relation>
+    <dc:description>The Canonical Citation Community Profile, built around the Key/Encoded-Value ContextObject Format, depends on the Key/Encoded-Value Metadata Format for Canonical Citations that meet the needs of citing a work or a passage within a work that is independent of edition or translation.</dc:description>
+    <dc:type>Core:Community Profiles</dc:type>
+</oai_dc:dc>

@@ -1,0 +1,289 @@
+<xsd:schema xmlns="info:ofi/fmt:xml:xsd:rtm_svc-200908" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="info:ofi/fmt:xml:xsd:rtm_svc-200908" elementFormDefault="qualified" xml:lang="EN">
+    <xsd:complexType name="codeOrIdentifier">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements comprising a code or identifier and a phrase or pointer indicating a list or source of an authoritative list of values</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="value" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>Code, URI or identifier</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:choice>
+                <xsd:element name="pointer" type="xsd:anyURI">
+                    <xsd:annotation>
+                        <xsd:documentation>Direction to a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="text" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>Phrase indicating a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="resourceDeliveryService">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements providing details of a service being requested in relation to a bibliographic resource.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="dateOfRequest" type="xsd:dateTime">
+                    <xsd:annotation>
+                        <xsd:documentation>Date and time on which a request for a service was created by a requesting system or referrer</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="requestIdentifier" type="xsd:string" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Text string assigned by a requester to identify a request.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="requestRequirements" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements that indicate specific aspects of a request including type of service, acceptable delays, maximum costs, access or copying rights and sundry notes.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="serviceRequestType">
+                                <xsd:annotation>
+                                    <xsd:documentation>Code indicating the nature of service required in relation to a specific bibliographic resource.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="1">
+                                            <xsd:annotation>
+                                                <xsd:documentation>loan</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="2">
+                                            <xsd:annotation>
+                                                <xsd:documentation>physical copy</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="3">
+                                            <xsd:annotation>
+                                                <xsd:documentation>digital copy</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="4">
+                                            <xsd:annotation>
+                                                <xsd:documentation>online access</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="5">
+                                            <xsd:annotation>
+                                                <xsd:documentation>reference look up</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="6">
+                                            <xsd:annotation>
+                                                <xsd:documentation>other</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="needBeforeDateTime" type="xsd:dateTime" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Date and time structure indicating the latest possible acceptance date and time by which a response is required.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="requestedMaterialFormat" type="codeOrIdentifier" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements indicating preferred physical or digital manifestation of a bibliographic item or resource, often constraining its use or indicating software that can read and display the resource.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="requestedMaterialLanguage" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Code or word indicating the preferred language of the intellectual content of a resource.  Recommended to use ISO 639-2; 3 character language codes.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="requestedEdition" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Identifier of a group of copies of an item produced from one master copy or produced with substantially the same type image and having the same content.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="reasonForRequest" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Text string that indicates the motives for requesting a bibliographic resource that may affect the supply options.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="userNote" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Data string providing miscellaneous and additional information relating to a request.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="paymentInformation">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements indicating the method of payment for a request or payment authorisation</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:choice>
+                            <xsd:element name="paymentAuthorisation">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements giving details of an institution that authorises a request and authorisation details, account details and period of time of the validity of the authorisation.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="authorisationInstitution" type="xsd:string">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Text string identifying an institution guaranteeing to pay the costs of a user’s transaction or having already pre-paid the costs by subscription or other agreement.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="authorisationDetail" type="xsd:string" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Text string indicating acceptance by an institution of financial liability for a person’s transactions. Examples: authorisation number, digital signature or authorising officer</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="authorisationAccount" type="xsd:string" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Phrase indicating a particular financial account associated with an institution.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="authorisationLimit" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Maximum amount that a user may incur  for a transaction, session or group of transactions, including an indication of currency.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:complexType>
+                                                <xsd:simpleContent>
+                                                    <xsd:extension base="xsd:decimal">
+                                                        <xsd:attribute name="Currency" type="xsd:anyURI" use="optional">
+                                                            <xsd:annotation>
+                                                                <xsd:documentation>Code indicating the type of currency of a particular sum of money.  Use ISO 4217 3 character codes:  http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm </xsd:documentation>
+                                                            </xsd:annotation>
+                                                        </xsd:attribute>
+                                                    </xsd:extension>
+                                                </xsd:simpleContent>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="dateTimeAuthorisationExpires" type="xsd:dateTime">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Date and time after which it is no longer valid to use an institution’s account or other access privileges</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="selfPayment">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements giving details of how a requester intends to pay and the maximum he or she is prepared to pay.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="paymentMethod" type="codeOrIdentifier" maxOccurs="unbounded">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Group of data elements indicating how a requester intends to pay for a product or service</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="maximumAmount">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Maximum sum of money that a requester  will pay for a product or service, including indication of currency.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:complexType>
+                                                <xsd:simpleContent>
+                                                    <xsd:extension base="xsd:decimal">
+                                                        <xsd:attribute name="Currency" type="xsd:anyURI" use="optional">
+                                                            <xsd:annotation>
+                                                                <xsd:documentation>Code indicating the type of currency of a particular sum of money.  Use ISO 4217 3 character codes:  http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm </xsd:documentation>
+                                                            </xsd:annotation>
+                                                        </xsd:attribute>
+                                                    </xsd:extension>
+                                                </xsd:simpleContent>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:choice>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="rightsInformation" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements describing intellectual entitlements and distribution entitlements to access, copy, modify or delete a resource.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:choice>
+                            <xsd:element name="rights">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements describing intellectual entitlements and distribution entitlements to access, copy, modify or delete a resource.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="rightsInformationType">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Code indicating the nature of an individual's right to an item, including right to access, right to borrow or right to receive a copy.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:enumeration value="1">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>access</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                    <xsd:enumeration value="2">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>copy</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                    <xsd:enumeration value="3">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>modify</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                    <xsd:enumeration value="4">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>delete</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                    <xsd:enumeration value="5">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>borrow</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                    <xsd:enumeration value="6">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>other</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:enumeration>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="rightsInformationDetail" type="xsd:string">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Code or string indicating details of an individual's right to an item.  Examples:  authorisation code, copyright declaration.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="rightsAccordedBy" type="xsd:string" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Identification of an individual or institution owning rights or granting rights pertaining to a particular bibliographic resource.  Examples:  Author, Publisher, Copyright Clearance Agency, Requester (rightsInformationDetail = copyright declaration.)</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="dateTimeRightsCommence" type="xsd:dateTime" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Date and time after which the rights of an individual in relation to services pertaining to a particular bibliographic resource are active.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="dateTimeRightsEnd" type="xsd:dateTime" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Date and time after which the rights of an individual in relation to services pertaining to a particular bibliographic resource are no longer active.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:any namespace="##other">
+                                <xsd:annotation>
+                                    <xsd:documentation>External structure describing intellectual entitlements and distribution entitlements to access, copy, modify or delete a resource.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:any>
+                        </xsd:choice>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

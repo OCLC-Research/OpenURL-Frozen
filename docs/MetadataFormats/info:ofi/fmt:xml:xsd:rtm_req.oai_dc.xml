@@ -1,0 +1,9 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>XML Metadata Format for Request Transfer Profile Requesters</dc:title>
+    <dc:creator>OCLC PICA</dc:creator>
+    <dc:date>2007-07-30</dc:date>
+    <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_req</dc:identifier>
+    <dc:description>This XML Schema defines a format for Request Transfer Profile Requesters.</dc:description>
+    <dc:coverage>Deprecated</dc:coverage>
+    <dc:type>Core:Metadata Formats</dc:type>
+</oai_dc:dc>

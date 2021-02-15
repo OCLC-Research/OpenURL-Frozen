@@ -1,0 +1,9 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>UTF-8 encoded Unicode</dc:title>
+    <dc:creator>IETF</dc:creator>
+    <dc:creator>ISO</dc:creator>
+    <dc:description>The registered Character Encoding that references the IANA character set with the Name UTF-8.</dc:description>
+    <dc:identifier>http://www.ietf.org/rfc/rfc2279.txt</dc:identifier>
+    <dc:identifier>ISO 10646</dc:identifier>
+    <dc:type>Core:Character Encodings</dc:type>
+</oai_dc:dc>

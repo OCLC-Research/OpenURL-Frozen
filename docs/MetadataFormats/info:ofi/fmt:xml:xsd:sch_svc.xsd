@@ -1,0 +1,43 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:sv="info:ofi/fmt:xml:xsd:sch_svc"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           targetNamespace="info:ofi/fmt:xml:xsd:sch_svc"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining the XML Metadata Format to represent service types used by the scholarly information community. This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:sch_svc</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML Format sch_svc</dc:title>
+            <dc:creator>Committee NISO AX, OpenURL Standard Committee</dc:creator>
+            <dc:description>This XML Schema defines an XML Metadata Format to represent service types used by the scholarly information community.</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:sch_svc</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:sch_svc</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="abstract" type="sv:svcVal"/>
+    <xs:element name="citation" type="sv:svcVal"/>
+    <xs:element name="fulltext" type="sv:svcVal"/>
+    <xs:element name="holdings" type="sv:svcVal"/>
+    <xs:element name="ill" type="sv:svcVal"/>
+    <xs:element name="any" type="sv:svcVal"/>
+    <xs:element name="svc-list">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="sv:abstract" minOccurs="0"/>
+                <xs:element ref="sv:citation" minOccurs="0"/>
+                <xs:element ref="sv:fulltext" minOccurs="0"/>
+                <xs:element ref="sv:holdings" minOccurs="0"/>
+                <xs:element ref="sv:ill" minOccurs="0"/>
+                <xs:element ref="sv:any" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="svcVal">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

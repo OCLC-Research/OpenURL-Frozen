@@ -1,0 +1,263 @@
+<xsd:schema xmlns="info:ofi/fmt:xml:xsd:rtm_req-200908" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="info:ofi/fmt:xml:xsd:rtm_req-200908" elementFormDefault="qualified" xml:lang="EN">
+    <xsd:complexType name="codeOrIdentifier">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements comprising a code or identifier and a phrase or pointer indicating a list or source of an authoritative list of values</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="value" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>Code, URI or identifier</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:choice>
+                <xsd:element name="pointer" type="xsd:anyURI">
+                    <xsd:annotation>
+                        <xsd:documentation>Direction to a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="text" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>Phrase indicating a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="resourceUser">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements identifying an individual or institution making a request and giving details that are pertinent in the context of the request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="userInfo" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements identifying an individual or institution making a request.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="userName">
+                                <xsd:annotation>
+                                    <xsd:documentation>Text string or group of data elements comprising the full name of a individual.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:choice>
+                                        <xsd:element name="text" type="xsd:string"/>
+                                        <xsd:sequence>
+                                            <xsd:element name="userSurname" type="xsd:string">
+                                                <xsd:annotation>
+                                                    <xsd:documentation>Family name of an individual.</xsd:documentation>
+                                                </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="userGivenName" type="xsd:string" minOccurs="0">
+                                                <xsd:annotation>
+                                                    <xsd:documentation>Simple, double or compound name that distinguishes an individual within a family carrying a common name.</xsd:documentation>
+                                                </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="userInitials" type="xsd:string" minOccurs="0">
+                                                <xsd:annotation>
+                                                    <xsd:documentation>First letter of each of a person's given name that distinguish an individual within a family carrying a common surname.</xsd:documentation>
+                                                </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="userNamePrefix" type="xsd:string" minOccurs="0">
+                                                <xsd:annotation>
+                                                    <xsd:documentation>Text string, placed before other personal name elements, that serves to clarify an individual's identify, but does not form an integral part of a name.</xsd:documentation>
+                                                </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="userNameSuffix" type="xsd:string" minOccurs="0">
+                                                <xsd:annotation>
+                                                    <xsd:documentation>Text string placed on the end of a personal name that serves to clarify an individual's identify but does not form an integral part of a name.</xsd:documentation>
+                                                </xsd:annotation>
+                                            </xsd:element>
+                                        </xsd:sequence>
+                                    </xsd:choice>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="contactLanguage" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Code indicating the language in which an individual prefers to communicate.  Recommend use of ISO 639-2, 3 language character codes.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="proxyFor" type="codeOrIdentifier" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Data string indicating a person or institution for whom a request is being made</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="affiliation" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements identifying an institution with which a requester is affiliated and indicating the nature of the relationship of the requester to the institution.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="preferredAffiliation" type="xsd:boolean">
+                                <xsd:annotation>
+                                    <xsd:documentation>Indication of whether a particular affiliation of a group of affiliation records is to be used in preference to the others of the group.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="userCategory" type="codeOrIdentifier">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements defining a person's role and function within an organisation.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="userStatus" type="codeOrIdentifier">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements that indicates a user's borrowing and other privileges.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="userIdentifier" type="codeOrIdentifier" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements that identify a requester.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="affiliationInstitution">
+                                <xsd:annotation>
+                                    <xsd:documentation>Group of data elements identifying an institution with which a requester is affiliated.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="institutionIdentifier" type="codeOrIdentifier" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Group of data elements presented to a system to identify an institution.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="institutionName" type="xsd:string">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Word, or phrase or initialism intended to identify an institution or corporation.  Can include full name or just a code.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="institutionSection" type="xsd:string" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Part of a name of an institution that defines a subdivision or department or unit of the institution.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="address" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements that give a geographic or electronic location or place associated with an individual or institution.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="addressLabel" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Code, word or phrase that defines the nature of a particular address where there are multiple addresses associated with an institution or individual.  Examples:  Personal home address, term address, business address, library branch address.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="addressInfo">
+                                <xsd:complexType>
+                                    <xsd:choice>
+                                        <xsd:element name="addressIdentifier" type="codeOrIdentifier">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Group of data elements providing information that uniquely identifies an address within a defined list.</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="addressDetail">
+                                            <xsd:annotation>
+                                                <xsd:documentation>String or group of data elements that give a geographic or electronic location or place associated with an institution.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:complexType>
+                                                <xsd:choice maxOccurs="unbounded">
+                                                    <xsd:element name="text" type="xsd:string"/>
+                                                    <xsd:any namespace="##other"/>
+                                                </xsd:choice>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:choice>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="addressRole" use="required">
+                            <xsd:annotation>
+                                <xsd:documentation>Code that indicates the type of message or mail that is sent to the address where there are multiple addresses associated with an institution or individual</xsd:documentation>
+                            </xsd:annotation>
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:enumeration value="1">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Physical delivery address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="2">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Electronic delivery address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="3">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Invoice address physical</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="4">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Invoice address electronic</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="5">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Electronic notification address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="6">
+                                        <xsd:annotation>
+                                            <xsd:documentation>physical notification address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="7">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Other</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="8">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Pickup location</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        <xsd:attribute name="addressType" use="required">
+                            <xsd:annotation>
+                                <xsd:documentation>Code that indicates the form of communication associated with an address, physical or electronic.</xsd:documentation>
+                            </xsd:annotation>
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:enumeration value="1">
+                                        <xsd:annotation>
+                                            <xsd:documentation>physical address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="2">
+                                        <xsd:annotation>
+                                            <xsd:documentation>physical collection address, e.g. post office box</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="3">
+                                        <xsd:annotation>
+                                            <xsd:documentation>email address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="4">
+                                        <xsd:annotation>
+                                            <xsd:documentation>IP address</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                    <xsd:enumeration value="5">
+                                        <xsd:annotation>
+                                            <xsd:documentation>Other</xsd:documentation>
+                                        </xsd:annotation>
+                                    </xsd:enumeration>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

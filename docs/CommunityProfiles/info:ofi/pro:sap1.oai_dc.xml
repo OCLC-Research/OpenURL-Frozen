@@ -1,0 +1,10 @@
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    <dc:title>San Antonio Level 1 Community Profile</dc:title>
+    <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+    <dc:date>2004-01-01</dc:date>
+    <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:sap1</dc:identifier>
+    <dc:relation>isReferencedBy Appendix D of Part 2 of the OpenURL Framework Standard http://www.openurl.info/registry/docs/pdf/SanAntonioProfile.pdf</dc:relation>
+    <dc:description>The San Antonio Level 1 Community Profile, built around the Key/Encoded-Value ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the scholarly information community.</dc:description>
+    <dc:coverage>Deprecated</dc:coverage>
+    <dc:type>Core:Community Profiles</dc:type>
+</oai_dc:dc>

@@ -1,0 +1,126 @@
+<xsd:schema xmlns="info:ofi/fmt:xml:xsd:rtm_rft-200908" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="info:ofi/fmt:xml:xsd:rtm_rft-200908" elementFormDefault="qualified" xml:lang="EN">
+    <xsd:complexType name="codeOrIdentifier">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements comprising a code or identifier and a phrase or pointer indicating a list or source of an authoritative list of values</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="value" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>Code, URI or identifier</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:choice>
+                <xsd:element name="pointer" type="xsd:anyURI">
+                    <xsd:annotation>
+                        <xsd:documentation>Direction to a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="text" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>Phrase indicating a definitive list of values within which an identifier or code is unique such as a URL or URN</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="wantedResource">
+        <xsd:annotation>
+            <xsd:documentation>Group of data elements identifying a bibliographic resource that is wanted by a requester.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="verificationSource" type="xsd:string" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Authoritative source of bibliographic information used to identify or locate an item.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="resourceSupplyFactors" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements estimating the ease of locating and obtaining a copy of a particular bibliographic resource.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="inPrint" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Code indicating or estimating whether or not a bibliographic work or manifestation is currently available through its normal distribution channels.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="1">
+                                            <xsd:annotation>
+                                                <xsd:documentation>In Print</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="2">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Out of print</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="3">
+                                            <xsd:annotation>
+                                                <xsd:documentation>other</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                        <xsd:enumeration value="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>unknown</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:enumeration>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="copyright" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Text string indicating or estimating whether a bibliographic work or manifestation is protected by copyright law and optionally indicating the current owner of copyright.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="rareness" type="xsd:string" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Text string indicating or estimating how difficult it is to locate a copy of a bibliographic work including known institutions possessing a copy within a geographic area.</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="additionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group of data elements providing additional identifiers for the wanted resource not included elsewhere</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="type" type="xsd:string">
+                                <xsd:annotation>
+                                    <xsd:documentation>Label indicating the nature of the additional identifier element provided in "value".</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="value" type="xsd:string">
+                                <xsd:annotation>
+                                    <xsd:documentation>Additional identifying information</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="additionalDescription" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Group nof data elements providing additional descriptive elements of the wanted resource not included elsewhere</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="type" type="xsd:string">
+                                <xsd:annotation>
+                                    <xsd:documentation>Label indicating the nature of the additional descriptive element provided in "value".</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="value" type="xsd:string">
+                                <xsd:annotation>
+                                    <xsd:documentation>Additional descriptive information</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

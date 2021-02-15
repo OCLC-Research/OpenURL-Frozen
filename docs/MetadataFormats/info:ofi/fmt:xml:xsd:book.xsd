@@ -1,0 +1,169 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bk="info:ofi/fmt:xml:xsd:book" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/fmt:xml:xsd:book" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining the XML Metadata Format to represent book-like objects.  This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:book</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML Format book</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:description>This XML Schema defines an XML Metadata Format to express properties of book-like objects</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:book</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:book</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="book" type="bk:bookType">
+        <xs:annotation>
+            <xs:documentation>The root element "book" contains child elements that are used to express properties of book-like objects</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="authors" type="bk:authorType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The "authors" element contains child elements that are used to express authorship of book. The "authors" element is not repeatable, it contains all authors, and allows for the indication of the position of the author in the publication's list of authors</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="btitle" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The title of the book, e.g. ""moby dick or the white whale". Use the most complete title available. This information can also be expressed in the "title" element, which is provided for compatibility with OpenURL version 0.1</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="atitle" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Chapter title. This element is used if the item to be identified is a Chapter within a book</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The title of the book.  This element if provided for compatibility with OpenURL version 0.1. Usage of btitle is prefered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="place" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Place of publication, e.g. "New York"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pub" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Publisher name, e.g. "Harper and Row"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="xs:gYear" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Date of publication in ISO8601 form YYYY.  Book dates are assumed to be a single year</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="edition" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Statement of the edition of the book. This will usually be a phrase, with or without numbers, but may also be a single number, e.g. "First edition", "4th ed."</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tpages" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Total pages. Total pages is the largest recorded number of pages, if this can be determined. E.g., "ix, 392 p." would be recorded as "392" in tpages. This data element is usually available only for monographs (books and  printed reports). In some cases, tpages may not be numeric, e.g. "F36"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="spage" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>First page number of a start/end (spage-epage) pair. Note that pages are not always numeric.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="epage" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Second (ending) page number of a start/end (spage-epage) pair</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pages" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start and end pages in the form "startpage-endpage". This field can also be used for an unstructured pagination statement when data relating to pagination cannot be interpreted as a start-end pair, e.g. "A7, C4-9", "1-3,6"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="series" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The title of a series in which the book or document was issued. There may also be an ISSN associated with the series.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="isbn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>International Standard Book Number (ISBN). The ISBN is usually presented as 9 digits plus a final check digit (which may be "X"), e.g. "057117678X" .  ISBN numbers may contain hyphens, e.g. "1-878067-73-7"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="issn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>International Standard Serials Number (ISSN). The issn may contain a hyphen, e.g. "1041-5653". An ISSN in the book format is often associated with a series title.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="bici" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Book Item and Component Identifier (BICI). BICI is a draft NISO standard.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="genre" type="bk:genreType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Genre of the document.  Legitimate values for the "genre" element are: (1) "book": for a publication that is complete in one part or a designated finite number of parts, often identified with an ISBN (2) "bookitem: for a defined section of a book, usually with a separate title or number (3) "conference": for a publication bundling the proceedings of a conference (4) "proceeding": for a a conference paper or proceeding published in a conference publication. (5) report: for a report or technical report is a published document that is issued by an organization, agency or government body (6) "document": to inidcate a general document type when available data elements do not allow determination of a more specific document type, e.g. when one has only author and title but no publication information. (7) "unknown": use when the genre is unknown.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="author" type="bk:detailedAuthorType" minOccurs="0"/>
+            <xs:element name="au" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's full name, e.g. "Smith, Fred M", "Harry S. Truman"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="aucorp" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Organization or corporation that is the author or creator of the book, e.g. "Mellon Foundation"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="detailedAuthorType">
+        <xs:sequence>
+            <xs:element name="aulast" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's family name. This may be more than one word. In many citations, the author's family name is recorded first and is followed by a comma, e.g. Smith, Fred James is recorded as "aulast=smith"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="aufirst" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The  author's given name or names or initials. This data element may contain multiple words and punctuation, e.g. "Fred F", "Fred James"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first and middle initials.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit1" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinitm" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's middle initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ausuffix" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's name suffix. Qualifiers on an author's name such as "Jr.", "III" are entered here. e.g. Smith, Fred Jr. is recorded as "ausuffix=jr"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="genreType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="book"/>
+            <xs:enumeration value="bookitem"/>
+            <xs:enumeration value="conference"/>
+            <xs:enumeration value="proceeding"/>
+            <xs:enumeration value="report"/>
+            <xs:enumeration value="document"/>
+            <xs:enumeration value="unknown"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

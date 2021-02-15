@@ -1,0 +1,116 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pa="info:ofi/fmt:xml:xsd:patent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/fmt:xml:xsd:patent" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining the XML Metadata Format to represent Patents.  This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:patent</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML Metdata Format for Patents</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:description>This XML Schema defines an XML Metadata Format to express properties of Patents</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:patent</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:patent</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="patent" type="pa:patentType">
+        <xs:annotation>
+            <xs:documentation>The root element "patent" contains child elements that are used to express properties of Patents</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="patentType">
+        <xs:sequence>
+            <xs:element name="inventors" type="pa:inventorsType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The "inventors" element contains child elements that are used to express the inventors of a patent. The "inventors" element is not repeatable, it contains all inventors, and allows for the indication of the position of the inventor in the patent's list of inventors</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Patent title, e.g. "Multi-purpose, species discriminating bird feeder".</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="co" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Country of publication, e.g. "United States"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cc" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Country of publication code in ISO 2-character format (ISO 3166-1-Alpha-2 code elements), e.g. "US"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="kind" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The patent kind code indicates the stage of the patent. Kind codes are meaningful within a country code, ie.e. "AU A1".</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="applcc" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Application country code, that is, the country in which the patent application was made (mainly used for patents pending).  Expressed in ISO 2-character format (ISO 3166-1-Alpha-2 code elements), e.g. "US"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="applnumber" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Application number assigned to the patent, e.g. "2000028896"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="number" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Patent number.This number is usually combined with the country code for retrieval</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Date patent was issued in the ISO 8601 form CCYY-MM-DD</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="applyear" type="xs:gYear" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Year the patent-application was made</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="appldate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Date the patent-application was made, in the ISO 8601 form CCYY-MM-DD</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="assignee" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Patent assignee, e.g. "IBM", "Microsoft Corporation"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pubdate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Publication date of the patent, in the ISO 8601 form CCYY-MM-DD</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="prioritydate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Priority application date, in the ISO 8601 form CCYY-MM-DD</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="inventorsType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="inventor" type="pa:detailedInventorType" minOccurs="0"/>
+            <xs:element name="inv" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The inventor's full name, e.g. "Smith, Fred M", "Harry S. Truman"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="detailedInventorType">
+        <xs:sequence>
+            <xs:element name="invlast" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The inventor's family name. This may be more than one word. In many citations, the  inventor's family name is recorded first and is followed by a comma, e.g. Smith, Fred James is recorded as "invlast=smith"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="invfirst" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The   inventor's given name or names or initials. This data element may contain multiple words and punctuation, e.g. "Fred F", "Fred James"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

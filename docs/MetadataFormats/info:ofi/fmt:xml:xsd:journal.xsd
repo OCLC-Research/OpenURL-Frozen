@@ -1,0 +1,213 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jo="info:ofi/fmt:xml:xsd:journal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/fmt:xml:xsd:journal" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining the XML Metadata Format to represent serially published documents, and its component parts "issue" and "article".  This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:journal</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML Format article</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:description>This XML Schema defines a format to express properties of serial publications and their component parts</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:journal</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:journal</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+            <dcterms:modified>2007-09-28</dcterms:modified>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="journal" type="jo:journalType">
+        <xs:annotation>
+            <xs:documentation>The root element "journal" contains child elements that are used to express properties of serial publications</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="journalType">
+        <xs:sequence>
+            <xs:element name="authors" type="jo:authorType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The "authors" element contains child elements that are used to express authorship of an individual article in a serial publications. The "authors" element is not repeatable, it contains all authors, and allows for the indication of the position of the author in the publication's list of authors</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="atitle" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Article title</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Journal title. Provided for compatibility with OpenURL version 0.1. Usage of the "jtitle" element is preferred</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="jtitle" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Journal title. Use the most complete title available, e.g.  "journal of the american medical association". Abbreviated titles, when known, are provided in the "stitle" element.  Journal title information can also be provided in the "title" element, which is provided for compatibility with OpenURL version 0.1</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="stitle" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Abbreviated or short journal title. This is used for journal title abbreviations, e.g. "J Am Med Assn"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="jo:dateType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Date of publication in ISO8601 form YYYY, YYYY-MM or YYYY-MM-DD.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="chron" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Indications of chronology in a non ISO8601 form (like "Spring" or "1st quarter") should be carried in this element; the element content is not normalized. Where numeric ISO8601 dates are also available, they should be provided in the "date" element.  As such, a recorded date of publication of "Spring, 1992" becomes "date=1992" and "chron=spring".  Chronology information can also be provided in the "ssn" and "quarter" elements</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ssn" type="jo:ssnType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Season (chronology).  Legitimate values are "spring", "summer", "fall", "winter"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="quarter" type="jo:quarterType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Quarter (chronology).  Legitimate values are "1", "2", "3", "4"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Volume designation.Volume is usually expressed as a number but could be roman numerals or non-numeric, e.g. "124", or "VI"."4"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="part" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Part can be a special subdivision of a volume or it can be the highest level division of the journal. Parts are often designated with letters or names, e.g. "B", "Supplement"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="issue" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>This is the designation of the published issue of a journal, corresponding to the actual physical piece in most cases. While usually numeric, it could be non-numeric. Note that some publications use chronology in the place of enumeration, e.g. Spring, 1998.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="spage" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>First page number of a start/end (spage-epage) pair. Note that pages are not always numeric.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="epage" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Second (ending) page number of a start/end (spage-epage) pair</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pages" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start and end pages in the form "startpage-endpage". This field can also be used for an unstructured pagination statement when data relating to pagination cannot be interpreted as a start-end pair, e.g. "A7, C4-9", "1-3,6"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="artnum" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Article number assigned by the publisher. Article numbers are often generated for publications that do not have usable pagination, in particular electronic journal articles, e.g. "unifi000000090".   If article numbers are identifiers that follow a URI Scheme such as "info:doi/" the information should be provided in the Identifier Descriptor of the ContextObject, not in this "artnum" element.  Likewise, if articles are identified by means of a registered URI Scheme such as the http scheme, the information should be provided in the  Identifier Descriptor of the ContextObject</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="issn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>International Standard Serials Number (ISSN). ISSN numbers may contain a hyphen, e.g. "1041-5653"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="eissn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>ISSN for electronic version of the journal. Although there is no distinction by format in the assignment of  ISSNs, some bibliographic services now carry both the ISSN for the paper version and a separate ISSN for the electronic version. This data element is included here to allow expression of both types of ISSN numbers</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="isbn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>International Standard Book Number (ISBN). The ISBN is usually presented as 9 digits plus a final check digit (which may be "X"), e.g. "057117678X" . ISBN numbers may contain hyphens, e.g. "1-878067-73-7"
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coden" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>CODEN</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sici" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Serial Item and Contribution Identifier (SICI)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="genre" type="jo:genreType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Genre of the document.  Legitimate values for the "genre" element are: (1) "journal": for a serial publication issued in successive parts  (2) issue: for one instance of the serial publication (3) "article": for a document published in a journal. (4) "conference": for a record of a conference that includes one or more conference papers and that is published as an issue of a journal or serial publication  (5) "proceeding": a single conference presentation published in a journal or serial publication (6) preprint: for an individual paper or report published in paper or electronically prior to its publication in a journal or serial. (7) "unknown": use when the genre is unknown.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="author" type="jo:detailedAuthorType" minOccurs="0"/>
+            <xs:element name="au" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's full name, e.g. "Smith, Fred M", "Harry S. Truman"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="aucorp" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Organization or corporation that is the author or creator of the article, e.g. "Mellon Foundation"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="detailedAuthorType">
+        <xs:sequence>
+            <xs:element name="aulast" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's family name. This may be more than one word. In many citations, the author's family name is recorded first and is followed by a comma, e.g. Smith, Fred James is recorded as "aulast=smith"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="aufirst" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The  author's given name or names or initials. This data element may contain multiple words and punctuation, e.g. "Fred F", "Fred James"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first and middle initials.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit1" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinitm" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's middle initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ausuffix" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's name suffix. Qualifiers on an author's name such as "Jr.", "III" are entered here. e.g. Smith, Fred Jr. is recorded as "ausuffix=jr"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="dateType">
+        <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
+    </xs:simpleType>
+    <xs:simpleType name="ssnType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="spring"/>
+            <xs:enumeration value="summer"/>
+            <xs:enumeration value="fall"/>
+            <xs:enumeration value="winter"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="quarterType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="genreType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="journal"/>
+            <xs:enumeration value="issue"/>
+            <xs:enumeration value="article"/>
+            <xs:enumeration value="proceeding"/>
+            <xs:enumeration value="conference"/>
+            <xs:enumeration value="preprint"/>
+            <xs:enumeration value="unknown"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

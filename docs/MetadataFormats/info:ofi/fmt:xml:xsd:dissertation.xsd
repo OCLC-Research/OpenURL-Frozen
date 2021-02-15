@@ -1,0 +1,116 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:di="info:ofi/fmt:xml:xsd:dissertation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/fmt:xml:xsd:dissertation" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:annotation>
+        <xs:documentation>XML Schema defining the XML Metadata Format to represent Dissertations.  This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:dissertation</xs:documentation>
+        <xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML Metadata Format for Dissertations</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:description>This XML Schema defines an XML Metadata Format to express properties of Dissertations</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:dissertation</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:dissertation</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="dissertation" type="di:dissertationType">
+        <xs:annotation>
+            <xs:documentation>The root element "dissertation" contains child elements that are used to express properties of Dissertations</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="dissertationType">
+        <xs:sequence>
+            <xs:element name="authors" type="di:authorType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The "authors" element contains child elements that are used to express authorship of a Dissertation. The "authors" element is not repeatable, it contains all authors, and allows for the indication of the position of the author in the publication's list of authors</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The title of the Dissertation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="co" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Country of publication, e.g. "United States"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cc" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Country of publication code in ISO 2-character format (ISO 3166-1-Alpha-2 code elements), e.g. "US"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="inst" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Institution that issued the disseration, e.g. "University of California, Berkeley"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="advisor" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Dissertation advisor, e.g. "Prof. John H. James".</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="xs:gYear" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Date of publication in ISO8601 form YYYY.  Dissertation dates are assumed to be a single year</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tpages" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Total pages. Total pages is the largest recorded number of pages, if this can be determined. E.g., "ix, 392 p." would be recorded as "392" in tpages. This data element is usually available only for monographs (books and  printed reports). In some cases, tpages may not be numeric, e.g. "F36"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="isbn" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>International Standard Book Number (ISBN). The ISBN is usually presented as 9 digits plus a final check digit (which may be "X"), e.g. "057117678X" .  ISBN numbers may contain hyphens, e.g. "1-878067-73-7"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="degree" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Degree conferred, as listed in the metadata, e.g. "PhD", "laurea"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="author" type="di:detailedAuthorType" minOccurs="0"/>
+            <xs:element name="au" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's full name, e.g. "Smith, Fred M", "Harry S. Truman"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="detailedAuthorType">
+        <xs:sequence>
+            <xs:element name="aulast" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's family name. This may be more than one word. In many citations, the author's family name is recorded first and is followed by a comma, e.g. Smith, Fred James is recorded as "aulast=smith"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="aufirst" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The  author's given name or names or initials. This data element may contain multiple words and punctuation, e.g. "Fred F", "Fred James"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first and middle initials.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinit1" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's first initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="auinitm" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's middle initial.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ausuffix" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The author's name suffix. Qualifiers on an author's name such as "Jr.", "III" are entered here. e.g. Smith, Fred Jr. is recorded as "ausuffix=jr"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

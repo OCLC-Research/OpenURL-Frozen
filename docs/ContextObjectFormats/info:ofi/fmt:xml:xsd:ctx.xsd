@@ -1,0 +1,140 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ctx="info:ofi/fmt:xml:xsd:ctx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="info:ofi/fmt:xml:xsd:ctx" elementFormDefault="qualified" attributeFormDefault="unqualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <annotation>
+        <documentation>XML Schema defining XML ContextObject Format. Validated with XML Spy v.5.3 on September 27th 2003. This XML Schema is available at http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:ctx</documentation>
+        <appinfo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+            <dc:title>XML ContextObject Format</dc:title>
+            <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+            <dc:creator>Herbert Van de Sompel</dc:creator>
+            <dc:description>This XML Schema defines a format to express one or more ContextObjects as an XML document.</dc:description>
+            <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:ctx</dc:identifier>
+            <dc:identifier>info:ofi/fmt:xml:xsd:ctx</dc:identifier>
+            <dcterms:created>2004-01-01</dcterms:created>
+        </appinfo>
+    </annotation>
+    <element name="context-objects">
+        <annotation>
+            <documentation>The 'context-objects' element is a wrapper holding one or more autonomous XML ContextObjects.</documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="ctx:context-objects-type"/>
+            </complexContent>
+        </complexType>
+    </element>
+    <complexType name="context-objects-type">
+        <annotation>
+            <documentation>The 'context-objects' element is a wrapper holding one or more autonomous ContextObjects.</documentation>
+            <documentation>The 'context-objects' element has an optional administrative child element to hold Community-specific administrative data.  The name of that element is 'administration'.</documentation>
+        </annotation>
+        <sequence>
+            <element name="administration" type="ctx:administration-type" minOccurs="0"/>
+            <element ref="ctx:context-object" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <element name="context-object">
+        <annotation>
+            <documentation>The ContextObject is an information construct to represent an Entity that is referenced in a networked environment (the Referent) along with Entities that constitute the context in which the Referent is referenced.  In the ContextObject, the Entities that describe the context are: the ReferringEntity, the Requester, the Resolver, the ServiceType, the Referrer.  The ContextObject is represented by the 'context-object' element in this XML ContextObject Format</documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="ctx:context-object-type"/>
+            </complexContent>
+        </complexType>
+    </element>
+    <complexType name="context-object-type">
+        <annotation>
+            <documentation>The ContextObject represented using the XML ContextObject Format contains descriptions of the following Entities: (1) exactly one Referent, (2) zero or one ReferringEntity, (3) zero or one Requester, (4) zero or more ServiceTypes, (5) zero or more Resolvers, and (6) zero or one Referrer.  In the XML ContextObject Format, these Entities are represented by the elements 'referent', 'referring-entity', 'requester', 'service-type', 'resolver', and 'referrer', respectively.</documentation>
+            <documentation>Each ContextObject has the following optional administrative attributes: (1) 'version' attribute - version of the ContextObject - fixed value Z39.88-2004 (optional), (2) 'identifier' attribute - identifier of the ContextObject (optional), and (3) 'timestamp' attribute - date/time of creation of the ContextObject (optional).</documentation>
+            <documentation>The 'context-object' element has an optional administrative child element to hold Community-specific administrative data.  The name of that element is 'administration'.</documentation>
+        </annotation>
+        <sequence>
+            <element name="administration" type="ctx:administration-type" minOccurs="0"/>
+            <element name="referent" type="ctx:descriptor-type"/>
+            <element name="referring-entity" type="ctx:descriptor-type" minOccurs="0"/>
+            <element name="requester" type="ctx:descriptor-type" minOccurs="0"/>
+            <element name="service-type" type="ctx:descriptor-type" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="resolver" type="ctx:descriptor-type" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="referrer" type="ctx:descriptor-type" minOccurs="0"/>
+        </sequence>
+        <attribute name="version" use="optional" fixed="Z39.88-2004"/>
+        <attribute name="identifier" type="string" use="optional"/>
+        <attribute name="timestamp" type="ctx:utc-datetime-type" use="optional"/>
+    </complexType>
+    <complexType name="descriptor-type">
+        <annotation>
+            <documentation>In the XML ContextObject Format, each Entity of the ContextObject can be described by means of the following Descriptors: (1) zero or more Identifier Descriptors, (2) zero or more By-Value Metadata Descriptors, (3) zero or more By-Reference Metadata Descriptors, and (4) zero or more Private Data Descriptors.  In the XML ContextObject Format, these Descriptors are contained in the elements 'identifier', 'metadata-by-val', 'metadata-by-ref', and 'private-data', respectively.</documentation>
+        </annotation>
+        <sequence>
+            <element name="identifier" type="ctx:identifier-type" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="metadata-by-val" type="ctx:metadata-by-val-type" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="metadata-by-ref" type="ctx:metadata-by-ref-type" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="private-data" type="ctx:private-data-type" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <simpleType name="identifier-type">
+        <annotation>
+            <documentation>Identifiers in the OpenURL Framework are URIs</documentation>
+        </annotation>
+        <restriction base="anyURI"/>
+    </simpleType>
+    <complexType name="metadata-by-val-type">
+        <annotation>
+            <documentation>By-Value Metadata is provided through an XML description embedded in the ContextObject.</documentation>
+            <documentation>The By-Value Metadata is provided as the combination of (1) a 'format' element, which identifies the Metadata Format of the By-Value Metadata, and (2) a 'metadata' element in which the metadata corresponding to the identified Metadata Format is contained.</documentation>
+        </annotation>
+        <sequence>
+            <element name="format" type="ctx:metadata-identifier-type"/>
+            <element name="metadata" type="ctx:metadata-type"/>
+        </sequence>
+    </complexType>
+    <complexType name="metadata-type">
+        <sequence>
+            <any namespace="##other" processContents="lax"/>
+        </sequence>
+    </complexType>
+    <complexType name="metadata-by-ref-type">
+        <annotation>
+            <documentation>By-Reference Metadata is provided by means of the network-location of a document that contains the metadata.</documentation>
+            <documentation>By-Reference Metadata is provided as the combination of (1) a 'format' element, which identifies the Metadata Format of the By-Reference Metadata, and (2) a 'location' element that specifies the network-location of the By-Reference Metadata</documentation>
+        </annotation>
+        <sequence>
+            <element name="format" type="ctx:metadata-identifier-type"/>
+            <element name="location" type="ctx:network-location-type"/>
+        </sequence>
+    </complexType>
+    <complexType name="private-data-type">
+        <annotation>
+            <documentation>Private Data is provided through an XML description that declares its XML Namespace URI and schemaLocation.</documentation>
+        </annotation>
+        <sequence>
+            <any namespace="##other" processContents="lax"/>
+        </sequence>
+    </complexType>
+    <simpleType name="metadata-identifier-type">
+        <annotation>
+            <documentation>Metadata Formats in the OpenURL Framework are identified by means of URIs.  Registered Metadata Formats have a URI in the info:ofi/fmt: namespace, whereas Unregistered Metadata Formats have a URI in another URI namespace.  Both URIs are dereferencable to a document defining the Metadata Format</documentation>
+        </annotation>
+        <restriction base="anyURI"/>
+    </simpleType>
+    <simpleType name="network-location-type">
+        <annotation>
+            <documentation>The content of the network-location element is a URL specifying the network location of the By-Reference Metadata Description</documentation>
+        </annotation>
+        <restriction base="anyURI"/>
+    </simpleType>
+    <complexType name="administration-type">
+        <annotation>
+            <documentation>Administrative information can be attached to the 'context-objects' and/or the 'context-object' element.  Its content can be defined by communities of implementers.
+            </documentation>
+        </annotation>
+        <sequence>
+            <any namespace="##other" processContents="lax"/>
+        </sequence>
+    </complexType>
+    <simpleType name="utc-datetime-type">
+        <annotation>
+            <documentation>Valid values follow the ISO 8601 YYYY-MM-DD or YYYY-MM-DDTHH:MM:SSZ notation.</documentation>
+        </annotation>
+        <union memberTypes="date dateTime"/>
+    </simpleType>
+</schema>
