@@ -588,7 +588,7 @@
     </xsl:template>
 
     <xsl:template match="oai:setName">
-        <td><strong><a><xsl:attribute name="href">OAIHandler2?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=<xsl:value-of select="../oai:setSpec"/></xsl:attribute>
+        <td><strong><a><xsl:attribute name="href"><xsl:value-of select="."/>/ListRecords.oai_dc.xml</xsl:attribute>
             <xsl:value-of select="."/></a></strong></td>
     </xsl:template>
 
