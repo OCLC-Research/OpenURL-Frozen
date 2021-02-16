@@ -1,8 +1,9 @@
-<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+
+<?xml version="1.0" encoding="UTF-8" ?><?xml-stylesheet type="text/xsl" href="/openurl/openurl.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T20:14:41Z</responseDate><request identifier="info:ofi/enc:ISO-8859-1" metadataPrefix="oai_dc" verb="GetRecord">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><GetRecord><record><header><identifier>info:ofi/enc:ISO-8859-1</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Character+Encodings</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
     <dc:title>ISO Latin 1</dc:title>
     <dc:creator>ISO</dc:creator>
     <dc:description>The registered Character Encoding that references the IANA character set with the Name ISO-8859-1 (Latin-1).</dc:description>
     <dc:identifier>ISO/IEC 8859-1:1987</dc:identifier>
     <dc:identifier>http://www.ietf.org/rfc/rfc1345.txt</dc:identifier>
     <dc:type>Core:Character Encodings</dc:type>
-</oai_dc:dc>
+</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>

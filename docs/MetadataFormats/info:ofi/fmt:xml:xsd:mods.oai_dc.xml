@@ -1,8 +1,9 @@
-<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+
+<?xml version="1.0" encoding="UTF-8" ?><?xml-stylesheet type="text/xsl" href="/openurl/openurl.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T21:23:32Z</responseDate><request identifier="info:ofi/fmt:xml:xsd:mods" metadataPrefix="oai_dc" verb="GetRecord">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><GetRecord><record><header><identifier>info:ofi/fmt:xml:xsd:mods</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
     <dc:title>MODS Metadata Object Description Schema. Version 3.2</dc:title>
     <dc:creator>Library of Congress Network Development and MARC Standards Office</dc:creator>
     <dc:date>2007-09-21</dc:date>
     <dc:identifier>http://www.loc.gov/standards/mods/v3/mods-3-2.xsd</dc:identifier>
     <dc:description>MODS is a bibliographic XML schema is intended to be able to carry selected data from existing MARC 21 records as well as to enable the creation of original resource description records. It includes a subset of MARC fields and uses language-based tags rather than numeric ones, in some cases regrouping elements from the MARC 21 bibliographic format.</dc:description>
     <dc:type>Core:Metadata Formats</dc:type>
-</oai_dc:dc>
+</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>

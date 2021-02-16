@@ -1,8 +1,9 @@
-<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+
+<?xml version="1.0" encoding="UTF-8" ?><?xml-stylesheet type="text/xsl" href="/openurl/openurl.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T21:00:09Z</responseDate><request identifier="info:ofi/tsp:http:openurl-by-val" metadataPrefix="oai_dc" verb="GetRecord">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><GetRecord><record><header><identifier>info:ofi/tsp:http:openurl-by-val</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Transports</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
     <dc:title>By-Value OpenURL over HTTP</dc:title>
     <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
     <dc:date>2004-01-01</dc:date>
     <dc:identifier>Section 21 of the OpenURL Framework For Context-Sensitive Services Standard (http://www.openurl.info/registry/docs/pdf/z39_88_2004.pdf)</dc:identifier>
     <dc:description>Transport of By Value ContextObject using the HTTP network protocol.</dc:description>
     <dc:type>Core:Transports</dc:type>
-</oai_dc:dc>
+</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>
