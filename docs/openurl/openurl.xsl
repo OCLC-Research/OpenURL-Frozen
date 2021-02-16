@@ -373,7 +373,7 @@
         </table>
         <xsl:choose>
             <xsl:when test="/oai:OAI-PMH/oai:request/@metadataPrefix!='oai_dc'">
-                <p><a><xsl:attribute name="href"><xsl:text>/openurl/servlet/OAIHandler?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=</xsl:text><xsl:value-of select="oai:record/oai:header/oai:identifier"/></xsl:attribute>View Dublin Core metadata for this entry</a></p>
+                <p><a><xsl:attribute name="href"><xsl:text>/openurl/servlet/OAIHandlerA?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=</xsl:text><xsl:value-of select="oai:record/oai:header/oai:identifier"/></xsl:attribute>View Dublin Core metadata for this entry</a></p>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -512,7 +512,7 @@
     <xsl:template match="oai:record" mode="brief">
         <tr valign="top">
             <td><strong><a><xsl:attribute name="href">
-                <xsl:text>OAIHandler?verb=GetRecord&amp;metadataPrefix=</xsl:text><xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/><xsl:text>&amp;identifier=</xsl:text><xsl:value-of select="oai:header/oai:identifier"/>
+                <xsl:text>OAIHandlerB?verb=GetRecord&amp;metadataPrefix=</xsl:text><xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/><xsl:text>&amp;identifier=</xsl:text><xsl:value-of select="oai:header/oai:identifier"/>
             </xsl:attribute><xsl:value-of select="oai:header/oai:identifier"/></a></strong></td>
             <td><font color="green"><strong><xsl:value-of select="oai:metadata/oai_dc:dc/dc:coverage"/></strong></font></td>
             <td><xsl:value-of select="oai:metadata/oai_dc:dc/dc:title"/></td>
@@ -614,14 +614,14 @@
 
     <xsl:template match="oai:resumptionToken">
         <tr valign="top">
-            <td>ResumptionToken: <a><xsl:attribute name="href">OAIHandler?verb=<xsl:value-of select="//oai:OAI-PMH/oai:request/@verb"/>&amp;resumptionToken=<xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
+            <td>ResumptionToken: <a><xsl:attribute name="href">OAIHandlerC?verb=<xsl:value-of select="//oai:OAI-PMH/oai:request/@verb"/>&amp;resumptionToken=<xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
         </tr>
     </xsl:template>
 
     <xsl:template match="oai:identifier">
         <tr valign="top">
             <td><strong><xsl:value-of select="name()"/></strong></td>
-            <td><a><xsl:attribute name="href">OAIHandler?verb=GetRecord&amp;metadataPrefix=<xsl:choose><xsl:when test="/oai:OAI-PMH/oai:request/@metadataPrefix"><xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/></xsl:when><xsl:otherwise>oai_dc</xsl:otherwise></xsl:choose>&amp;identifier=<xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
+            <td><a><xsl:attribute name="href">OAIHandlerD?verb=GetRecord&amp;metadataPrefix=<xsl:choose><xsl:when test="/oai:OAI-PMH/oai:request/@metadataPrefix"><xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/></xsl:when><xsl:otherwise>oai_dc</xsl:otherwise></xsl:choose>&amp;identifier=<xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
         </tr>
     </xsl:template>
 
@@ -736,7 +736,7 @@
     <xsl:template match="oai:metadataFormat">
         <xsl:choose>
             <xsl:when test="/oai:OAI-PMH/oai:request/@identifier">
-                <tr valign="top"><td><a><xsl:attribute name="href">OAIHandler?verb=GetRecord&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/>&amp;identifier=<xsl:value-of select="/oai:OAI-PMH/oai:request/@identifier"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
+                <tr valign="top"><td><a><xsl:attribute name="href">OAIHandlerE?verb=GetRecord&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/>&amp;identifier=<xsl:value-of select="/oai:OAI-PMH/oai:request/@identifier"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
             </xsl:when>
             <xsl:otherwise>
                 <tr valign="top"><td><a><xsl:attribute name="href">OAIHandler3?verb=ListRecords&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
