@@ -315,9 +315,6 @@
                         <td bgcolor="#F9DD50" height="10"></td>
                     </tr>
                     <tr valign="top">
-                        <td><a href="http://www.oclc.org/research/software/oai/cat.shtm"><img border="0" src="http://alcme.oclc.org/openurl/oaicat_icon.gif" alt="OAICat - An OAI-PMH v2 Repository Framework" width="120" height="60"/></a>&#160;&#160;&#160;&#160;<a href="http://www.openarchives.org"><img border="0" src="/openurl/OA100.gif"/></a></td>
-                    </tr>
-                    <tr valign="top">
                         <td><address><a href="mailto:openurlagency@oclc.org?subject=OpenURL Registry Comment">openurlagency@oclc.org</a></address></td>
                     </tr>
                 </table>
@@ -700,9 +697,6 @@
         <tr valign="top">
             <td><strong><xsl:value-of select="name()"/></strong></td>
             <td>
-                <!--
-                <a href="http://alcme.oclc.org/openurl/index.html"><img src="http://alcme.oclc.org/openurl/oaicat_icon.gif" alt="Testing"/></a>
-                -->
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="oai_branding:link"/>
