@@ -509,7 +509,10 @@
     <xsl:template match="oai:record" mode="brief">
         <tr valign="top">
             <td><strong><a><xsl:attribute name="href">
-                <xsl:text>OAIHandlerB?verb=GetRecord&amp;metadataPrefix=</xsl:text><xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/><xsl:text>&amp;identifier=</xsl:text><xsl:value-of select="oai:header/oai:identifier"/>
+                <xsl:value-of select="oai:header/oai:identifier"/>
+                <xsl:text>.</xsl:text>
+                <xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/>
+                <xsl:text>.xml</xsl:text>
             </xsl:attribute><xsl:value-of select="oai:header/oai:identifier"/></a></strong></td>
             <td><font color="green"><strong><xsl:value-of select="oai:metadata/oai_dc:dc/dc:coverage"/></strong></font></td>
             <td><xsl:value-of select="oai:metadata/oai_dc:dc/dc:title"/></td>
