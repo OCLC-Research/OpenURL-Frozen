@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../openurl/openurl.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T16:40:57Z</responseDate><request metadataPrefix="oai_dc" verb="ListRecords" set="Core:Community Profiles">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><ListRecords>
+    <record><header><identifier>info:ofi/pro:canonical_cit</identifier><datestamp>2011-08-17</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Canonical Citation Community Profile</dc:title>
+        <dc:creator>David Ruddy, Cornell University Library</dc:creator>
+        <dc:date>2011-03-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:canonical_cit</dc:identifier>
+        <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/pdf/canonical_cit-2011-04-26.pdf</dc:relation>
+        <dc:description>The Canonical Citation Community Profile, built around the Key/Encoded-Value ContextObject Format, depends on the Key/Encoded-Value Metadata Format for Canonical Citations that meet the needs of citing a work or a passage within a work that is independent of edition or translation.</dc:description>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:dccp-2004</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Dublin Core Community Profile 2004</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-12-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:dccp-2004</dc:identifier>
+        <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/pdf/DublinCoreProfile-2004.pdf</dc:relation>
+        <dc:description>The Dublin Core Community Profile is built around the Key/Encoded-Value ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the Dublin Core community. </dc:description>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:dccp</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Dublin Core Community Profile</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:dccp</dc:identifier>
+        <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/pdf/DublinCoreProfile.pdf</dc:relation>
+        <dc:description>The Dublin Core Community Profile is built around the Key/Encoded-Value ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the Dublin Core community. </dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:rtm-2007</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Request Transfer Message Community Profile 2007</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2007-07-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:rtm-2007</dc:identifier>
+        <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/pdf/OpenURL_Request_Transfer_Message_Community_Profile_v_5.1.pdf</dc:relation>
+        <dc:description>N/A</dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:rtm-200908</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Request Transfer Message Community Profile 200908</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2009-08-14</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:rtm-200908</dc:identifier>
+        <dc:relation>isReferencedBy http://www.openurl.info/registry/docs/doc/Request_Transfer_Message_v5_3.doc</dc:relation>
+        <dc:description>N/A</dc:description>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:sap1-2004</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>San Antonio Level 1 Community Profile 2004</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-12-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:sap1-2004</dc:identifier>
+        <dc:relation>isReferencedBy Appendix C of the OpenURL Framework For Context-Sensitive Services Standard http://www.openurl.info/registry/docs/pdf/SanAntonioProfileLevel1-2004.pdf</dc:relation>
+        <dc:description>The San Antonio Level 1 Community Profile, built around the Key/Encoded-Value ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the scholarly information community. </dc:description>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:sap1</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>San Antonio Level 1 Community Profile</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:sap1</dc:identifier>
+        <dc:relation>isReferencedBy Appendix D of Part 2 of the OpenURL Framework Standard http://www.openurl.info/registry/docs/pdf/SanAntonioProfile.pdf</dc:relation>
+        <dc:description>The San Antonio Level 1 Community Profile, built around the Key/Encoded-Value ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the scholarly information community. </dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:sap2-2004</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>San Antonio Level 2 Community Profile 2004</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-12-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:sap2-2004</dc:identifier>
+        <dc:relation>isReferencedBy Appendix D of the OpenURL Framework For Context-Sensitive Services Standard http://www.openurl.info/registry/docs/pdf/SanAntonioProfileLevel2-2004.pdf</dc:relation>
+        <dc:description>The San Antonio Level 2 Community Profile, built around the XML ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the scholarly information community.</dc:description>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/pro:sap2</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Community+Profiles</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>San Antonio Level 2 Community Profile</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/pro/info:ofi/pro:sap2</dc:identifier>
+        <dc:relation>isReferencedBy Appendix D of Part 2 of the OpenURL Framework Standard http://www.openurl.info/registry/docs/pdf/SanAntonioProfile.pdf</dc:relation>
+        <dc:description>The San Antonio Level 2 Community Profile, built around the XML ContextObject Format, has choices for Metadata Formats and Namespaces that meet the needs of the scholarly information community.</dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Community Profiles</dc:type>
+    </oai_dc:dc></metadata></record>
+</ListRecords></OAI-PMH>
