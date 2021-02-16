@@ -470,7 +470,7 @@
             <xsl:for-each select="oai:header/oai:setSpec[generate-id(.)=generate-id(key('setSpecs',.)[1])]">
                 <xsl:variable name="temp"><xsl:value-of select="/oai:OAI-PMH/oai:request/@set"/><xsl:text>:</xsl:text></xsl:variable>
                 <xsl:if test="starts-with(.,$temp)">
-                    <tr><td><strong><a><xsl:attribute name="href"><xsl:text>/openurl/servlet/OAIHandler?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text><xsl:value-of select="."/></xsl:attribute>
+                    <tr><td><strong><a><xsl:attribute name="href"><xsl:text>/openurl/servlet/OAIHandler1?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text><xsl:value-of select="."/></xsl:attribute>
                         <xsl:variable name="temp2">
                             <xsl:call-template name="replace-substring">
                                 <xsl:with-param name="value" select="substring-after(.,$temp)" />
@@ -588,7 +588,7 @@
     </xsl:template>
 
     <xsl:template match="oai:setName">
-        <td><strong><a><xsl:attribute name="href">OAIHandler?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=<xsl:value-of select="../oai:setSpec"/></xsl:attribute>
+        <td><strong><a><xsl:attribute name="href">OAIHandler2?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=<xsl:value-of select="../oai:setSpec"/></xsl:attribute>
             <xsl:value-of select="."/></a></strong></td>
     </xsl:template>
 
@@ -739,7 +739,7 @@
                 <tr valign="top"><td><a><xsl:attribute name="href">OAIHandler?verb=GetRecord&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/>&amp;identifier=<xsl:value-of select="/oai:OAI-PMH/oai:request/@identifier"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
             </xsl:when>
             <xsl:otherwise>
-                <tr valign="top"><td><a><xsl:attribute name="href">OAIHandler?verb=ListRecords&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
+                <tr valign="top"><td><a><xsl:attribute name="href">OAIHandler3?verb=ListRecords&amp;metadataPrefix=<xsl:value-of select="oai:metadataPrefix"/></xsl:attribute><xsl:choose><xsl:when test="oai:metadataPrefix='oai_dc'"></xsl:when><xsl:when test="oai:metadataPrefix='mtx'">Z39.88-2004 MTX definition</xsl:when><xsl:when test="oai:metadataPrefix='pro'">Community Profile Format</xsl:when><xsl:when test="oai:metadataPrefix='xsd'">XML Schema definition</xsl:when><xsl:otherwise><xsl:value-of select="oai:metadataPrefix"/></xsl:otherwise></xsl:choose></a></td></tr>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -842,7 +842,7 @@
     <xsl:template match="dc:type" mode="verbose">
         <tr valign="top">
             <td width="150"><strong><xsl:value-of select="name()"/></strong></td>
-            <td><a><xsl:attribute name="href"><xsl:text>OAIHandler?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text><xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
+            <td><a><xsl:attribute name="href"><xsl:text>OAIHandler4?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text><xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
         </tr>
     </xsl:template>
 
