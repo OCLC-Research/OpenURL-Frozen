@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../openurl/openurl.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T16:22:34Z</responseDate><request metadataPrefix="oai_dc" verb="ListRecords" set="Core:Metadata Formats">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><ListRecords>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:book</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Books</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:book</dc:identifier>
+        <dc:date>2004-01-01</dc:date>
+        <dc:description>This Matrix represents a single document published at one time. </dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:canonical_cit</identifier><datestamp>2011-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Canonical Citations</dc:title>
+        <dc:creator>David Ruddy, Cornell University Library</dc:creator>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:canonical_cit</dc:identifier>
+        <dc:identifier>http://www.openurl.info/registry/docs/pdf/canonical_cit-2011-04-26.pdf</dc:identifier>
+        <dc:date>2010-11-15</dc:date>
+        <dc:description>This Matrix represents the Canonical Citation Format as a string of ampersand-delimited Key/Encoded Value pairs</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:dc</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Dublin Core</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:dc</dc:identifier>
+        <dc:description>This Matrix represents the Dublin Core Element Set.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:dissertation</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Dissertations</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:dissertation</dc:identifier>
+        <dc:description>This Matrix represents a dissertation related to a course of study at an institution of higher education.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:journal</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Journals</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:creator>Karen Coyle</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:journal</dc:identifier>
+        <dc:description>This Matrix represents the Journal Format as a string of ampersand-delimited Key/Encoded Value pairs.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:jpeg2000</identifier><datestamp>2008-08-15</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for JPEG2000 dissemination ServiceTypes</dc:title>
+        <dc:creator>Ryan Chute, Los Alamos National Laboratory</dc:creator>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:jpeg2000</dc:identifier>
+        <dc:date>2008-08-15</dc:date>
+        <dc:description>Key/Encoded-Value Metadata Format for Scholarly ServiceTypes. </dc:description>
+        <dc:coverage>Review</dc:coverage>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:patent</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Patents</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:patent</dc:identifier>
+        <dc:description>This Matrix represents a patent document as a string of ampersand-delimited Key/Encoded Value pairs.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:kev:mtx:sch_svc</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Key/Encoded-Value Metadata Format for Scholarly ServiceTypes</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:identifier>http://www.openurl.info/registry/docs/mtx/info:ofi/fmt:kev:mtx:sch_svc</dc:identifier>
+        <dc:date>2004-01-01</dc:date>
+        <dc:description>This Matrix represents the Scholarly Community ServiceTypes. </dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:book</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Books</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:book</dc:identifier>
+        <dc:description>This XML Schema defines an XML Metadata Format to express properties of book-like objects.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:dissertation</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Dissertations</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:dissertation</dc:identifier>
+        <dc:description>This XML Schema defines an XML Metadata Format to express properties of Dissertations.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:iso20775</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for ISO Holdings Schema ISO 20775 Referent</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2007-07-30</dc:date>
+
+        <dc:identifier>http://www.loc.gov/standards/iso20775/ISOholdings_V1.0.xsd</dc:identifier>
+        <dc:description>This XML Schema defines a format for ISO Holdings Schema ISO 20775 Referent.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:iso25577</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>ISO 25577 MarcXchange schema</dc:title>
+        <dc:creator>International Standards Organization</dc:creator>
+        <dc:date>2007-09-21</dc:date>
+
+        <dc:identifier>http://www.loc.gov/standards/iso25577/marcxchange-1-1.xsd</dc:identifier>
+        <dc:description>The MarcXchange schema is an evolution of the MARCXML schema to enable accommodation of different variations of the MARC encoding scheme (e.g. MARC21, UNIMARC, DANMARC, FINMARC etc.)</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:journal</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Journals</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:journal</dc:identifier>
+        <dc:description>This XML Schema defines a format to express properties of serial publications and their component parts. </dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:MARC21</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Library of Congress MARC XML Metadata Format</dc:title>
+        <dc:creator>Library of Congress</dc:creator>
+        <dc:identifier>http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd</dc:identifier>
+        <dc:description>This Metadata Format refers to the MARCXML schema developed by the Library of Congress to express MARC21 in XML. It uses the XML Physical Representation and the W3C XML Schema Constraint Language. </dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:mods</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>MODS Metadata Object Description Schema. Version 3.2</dc:title>
+        <dc:creator>Library of Congress Network Development and MARC Standards Office</dc:creator>
+        <dc:date>2007-09-21</dc:date>
+        <dc:identifier>http://www.loc.gov/standards/mods/v3/mods-3-2.xsd</dc:identifier>
+        <dc:description>MODS is a bibliographic XML schema is intended to be able to carry selected data from existing MARC 21 records as well as to enable the creation of original resource description records. It includes a subset of MARC fields and uses language-based tags rather than numeric ones, in some cases regrouping elements from the MARC 21 bibliographic format.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:oai_dc</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Open Archives Initiative Unqualified Dublin Core</dc:title>
+        <dc:creator>Dublin Core Metadata Initiative</dc:creator>
+        <dc:creator>The Open Archives Initiative</dc:creator>
+        <dc:identifier>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</dc:identifier>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:onix</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>EDItEUR Onix for Books XML Metadata Format Schema version 2.1</dc:title>
+        <dc:creator>EDItEUR</dc:creator>
+        <dc:date>2007-09-21</dc:date>
+        <dc:identifier>http://www.editeur.org/onix/2.1/reference/ONIX_BookProduct_Release2.1_reference.xsd</dc:identifier>
+        <dc:description>The ONIX for Books Product Information Message is the international standard for representing and communicating book industry product information in electronic form. See: http://www.editeur.org/onix.html.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:patent</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Patents</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:patent</dc:identifier>
+        <dc:description>This XML Schema defines an XML Metadata Format to express properties of Patents. </dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:pro-2004</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Format to represent Community Profiles 2004</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-12-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:pro-2004</dc:identifier>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:pro</identifier><datestamp>2009-09-15</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Format to represent Community Profiles</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:pro</dc:identifier>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_req-200908</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Requesters 200908</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2009-08-14</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_req-200908</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Requesters.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_req</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Requesters</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2007-07-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_req</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Requesters.</dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_rft-200908</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Referents 200908</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2009-08-14</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_rft-200908</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Referents.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_rft</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Referents</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2007-07-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_rft</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Referents.</dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_svc-200908</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Service Types 200908</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2009-08-14</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_svc-200908</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Service Types.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:rtm_svc</identifier><datestamp>2009-08-17</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Request Transfer Profile Service Types</dc:title>
+        <dc:creator>OCLC PICA</dc:creator>
+        <dc:date>2007-07-30</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:rtm_svc</dc:identifier>
+        <dc:description>This XML Schema defines a format for Request Transfer Profile Service Types.</dc:description>
+        <dc:coverage>Deprecated</dc:coverage>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/fmt:xml:xsd:sch_svc</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Metadata+Formats</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>XML Metadata Format for Scholarly ServiceTypes</dc:title>
+        <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
+        <dc:date>2004-01-01</dc:date>
+        <dc:identifier>http://www.openurl.info/registry/docs/xsd/info:ofi/fmt:xml:xsd:sch_svc</dc:identifier>
+        <dc:description>This XML Schema defines a bibliographic format for Scholarly Community ServiceTypes.</dc:description>
+        <dc:type>Core:Metadata Formats</dc:type>
+    </oai_dc:dc></metadata></record>
+</ListRecords></OAI-PMH>
