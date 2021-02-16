@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../openurl/openurl.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T15:52:57Z</responseDate><request metadataPrefix="oai_dc" verb="ListRecords" set="Core:Character Encodings">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><ListRecords>
+    <record><header><identifier>info:ofi/enc:Big5-HKSCS5</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Character+Encodings</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Big5-HKSCS5</dc:title>
+        <dc:description>The registered Character Encoding that references the IANA character set with the Name Big5-HKSCS5.</dc:description>
+        <dc:identifier>http://www.iana.org/assignments/charset-reg/Big5-HKSCS</dc:identifier>
+        <dc:type>Core:Character Encodings</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/enc:Big5</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Character+Encodings</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>Big5</dc:title>
+        <dc:description>The registered Character Encoding that references the IANA character set with the Name Big5.</dc:description>
+        <dc:source>Chinese for Taiwan Multi-byte set</dc:source>
+        <dc:type>Core:Character Encodings</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/enc:ISO-8859-1</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Character+Encodings</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>ISO Latin 1</dc:title>
+        <dc:creator>ISO</dc:creator>
+        <dc:description>The registered Character Encoding that references the IANA character set with the Name ISO-8859-1 (Latin-1).</dc:description>
+        <dc:identifier>ISO/IEC 8859-1:1987</dc:identifier>
+        <dc:identifier>http://www.ietf.org/rfc/rfc1345.txt</dc:identifier>
+        <dc:type>Core:Character Encodings</dc:type>
+    </oai_dc:dc></metadata></record>
+    <record><header><identifier>info:ofi/enc:UTF-8</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Character+Encodings</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <dc:title>UTF-8 encoded Unicode</dc:title>
+        <dc:creator>IETF</dc:creator>
+        <dc:creator>ISO</dc:creator>
+        <dc:description>The registered Character Encoding that references the IANA character set with the Name UTF-8.</dc:description>
+        <dc:identifier>http://www.ietf.org/rfc/rfc2279.txt</dc:identifier>
+        <dc:identifier>ISO 10646</dc:identifier>
+        <dc:type>Core:Character Encodings</dc:type>
+    </oai_dc:dc></metadata></record>
+</ListRecords></OAI-PMH>
