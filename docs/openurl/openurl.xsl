@@ -509,6 +509,7 @@
     <xsl:template match="oai:record" mode="brief">
         <tr valign="top">
             <td><strong><a><xsl:attribute name="href">
+                <xsl:text>./</xsl:text>
                 <xsl:value-of select="oai:header/oai:identifier"/>
                 <xsl:text>.</xsl:text>
                 <xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/>
