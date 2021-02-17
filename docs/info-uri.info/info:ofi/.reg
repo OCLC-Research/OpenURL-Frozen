@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <info-registry-entry xmlns="http://info-uri.info/registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://info-uri.info/registry http://info-uri.info/info-uri-registry.xsd">
     <info-namespace>ofi</info-namespace>
     <namespace-title>Namespace of Registry Identifiers used by the NISO OpenURL Framework Registry</namespace-title>
