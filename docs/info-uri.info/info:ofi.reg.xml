@@ -24,6 +24,6 @@
         <uri>http://www.openurl.info/registry/</uri>
     </namespace-information>
     <service-mechanism>
-        <uri>http://alcme.oclc.org/openurl/servlet/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=info:ofi/</uri>
+        <uri>http://alcme.oclc.org/openurl/servlet/OAIHandler?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=info:ofi/</uri>
     </service-mechanism>
 </info-registry-entry>
