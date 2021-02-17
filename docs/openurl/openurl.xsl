@@ -511,6 +511,9 @@
             <td><strong><a><xsl:attribute name="href">
                 <xsl:text>./</xsl:text>
                 <xsl:value-of select="oai:header/oai:identifier"/>
+                <xsl:if test="oai:header:header/oai:identifier='info:ofi/'">
+                    <xsl:text>default</xsl:text>
+                </xsl:if>
                 <xsl:text>.</xsl:text>
                 <xsl:value-of select="/oai:OAI-PMH/oai:request/@metadataPrefix"/>
                 <xsl:text>.xml</xsl:text>
