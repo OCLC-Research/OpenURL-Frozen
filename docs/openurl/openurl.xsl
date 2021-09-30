@@ -327,7 +327,9 @@
     </xsl:template>
 
     <xsl:template match="oai:Identify">
-        <h2 align="center"><xsl:value-of select="oai:repositoryName"/><br/>An <a href="http://www.openarchives.org/">OAI-PMH <xsl:value-of select="oai:protocolVersion"/></a> Repository</h2>
+        <h2 align="center">
+            <xsl:value-of select="oai:repositoryName"/>
+        </h2>
         <table width="100%" border="1" cellspacing="2" cellpadding="0">
             <tr><th colspan="2">OAI Identify Response</th></tr>
             <xsl:apply-templates/>

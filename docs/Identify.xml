@@ -8,7 +8,7 @@
     <request verb="Identify">http://alcme.oclc.org/openurl/servlet/OAIHandler</request>
     <Identify>
         <repositoryName>Registry for the OpenURL Framework</repositoryName>
-        <baseURL>http://alcme.oclc.org/openurl/servlet/OAIHandler</baseURL>
+        <baseURL></baseURL>
         <protocolVersion>2.0</protocolVersion>
         <adminEmail>mailto:openurlagency@oclc.org</adminEmail>
         <earliestDatestamp>2003-02-20</earliestDatestamp>
