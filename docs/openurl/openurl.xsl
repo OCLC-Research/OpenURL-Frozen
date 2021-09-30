@@ -288,7 +288,9 @@
                         <td>
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr valign="TOP">
-                                    <td><a href="http://www.niso.org/"><img src="http://www.niso.org/images/headermain/logo.png" border="0" alt="NISO"/></a><br/><img src="http://www.niso.org/design/images/spacer.gif" width="25" height="25" alt=""/></td>
+                                    <td>
+                                        <a href="http://www.niso.org/">NISO</a>
+                                    </td>
                                     <td colspan="3"><h1>Registry for the OpenURL Framework - ANSI/NISO Z39.88-2004</h1></td>
                                     <!--
                                                       <td><a href="http://www.niso.org"><img src="http://www.niso.org/design/images/home_niso_logo.gif" width="140" height="54" alt="NISO"/></a><br/><img src="http://www.niso.org/design/images/spacer.gif" width="25" height="25" alt=""/></td>
