@@ -1053,12 +1053,14 @@
     </xsl:template>
 
     <!-- Template for elements with only text children -->
+    <!--
     <xsl:template match="xs:*[text() and not(comment() | processing-instruction())]|pro:*[text() and not(comment() | processing-instruction())]" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pro="info:ofi/pro" mode="verbose">
         <DIV class="e"><DIV STYLE="margin-left:1em;text-indent:-2em">
             <SPAN class="b">&#160;</SPAN> <SPAN class="m">&lt;</SPAN><SPAN><xsl:attribute name="class"><xsl:if test="starts-with(name(),'xsl:')">x</xsl:if>t</xsl:attribute><xsl:value-of select="name()"/></SPAN><xsl:apply-templates select="@*" mode="verbose"/>
             <SPAN class="m">&gt;</SPAN><SPAN class="tx"><xsl:value-of select="."/></SPAN><SPAN class="m">&lt;/</SPAN><SPAN><xsl:attribute name="class"><xsl:if test="starts-with(name(),'xsl:')">x</xsl:if>t</xsl:attribute><xsl:value-of select="name()"/></SPAN><SPAN class="m">&gt;</SPAN>
         </DIV></DIV>
     </xsl:template>
+    -->
 
     <!-- Template for elements with element children -->
     <xsl:template match="xs:*[xs:*]|pro:*[pro:*]" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pro="info:ofi/pro" mode="verbose">
