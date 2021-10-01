@@ -3,8 +3,8 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-02-16T17:28:12Z</responseDate><request identifier="info:ofi/nam:info:bibcode:" metadataPrefix="oai_dc" verb="GetRecord">http://alcme.oclc.org/openurl/servlet/OAIHandler</request><GetRecord><record><header><identifier>info:ofi/nam:info:bibcode:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
     <dc:title>Namespace of Astrophysics Bibcodes</dc:title>
     <dc:creator>NASA</dc:creator>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/?metadataPrefix=reg</dc:identifier>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/.reg</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:bibcode/reg.html</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:bibcode/reg.xml</dc:identifier>
     <dc:identifier>info:bibcode/</dc:identifier>
     <dc:description>Namespace of identifiers that follow the Astrophysics Data System Bibcode scheme.</dc:description>
     <dc:type>Core:Namespaces</dc:type>

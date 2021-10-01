@@ -5,8 +5,8 @@
     <dc:creator>NISO</dc:creator>
     <dc:date>2004-01-01</dc:date>
     <dc:description>Namespace for identifiers that follow the Serial Item and Contribution Identifier (SICI) scheme (ANSI/NISO Z39.56-1996 Version 2)</dc:description>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/?metadataPrefix=reg</dc:identifier>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/.reg</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sici/reg.html</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sici/reg.xml</dc:identifier>
     <dc:identifier>info:sici/</dc:identifier>
     <dc:type>Core:Namespaces</dc:type>
 </oai_dc:dc></metadata></record></GetRecord></OAI-PMH>

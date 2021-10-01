@@ -4,8 +4,8 @@
     <record><header><identifier>info:ofi/</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace reserved for OpenURL Framework Registry Identifiers</dc:title>
         <dc:creator>NISO Committee AX, OpenURL Standard Committee</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:ofi/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:ofi/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:ofi/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:ofi/reg.xml</dc:identifier>
         <dc:identifier>info:ofi/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
@@ -57,8 +57,8 @@
     <record><header><identifier>info:ofi/nam:info:bibcode:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace of Astrophysics Bibcodes</dc:title>
         <dc:creator>NASA</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:bibcode/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:bibcode/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:bibcode/reg.xml</dc:identifier>
         <dc:identifier>info:bibcode/</dc:identifier>
         <dc:description>Namespace of identifiers that follow the Astrophysics Data System Bibcode scheme.</dc:description>
         <dc:type>Core:Namespaces</dc:type>
@@ -66,8 +66,8 @@
     <record><header><identifier>info:ofi/nam:info:doi:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace of Digital Object Identifiers</dc:title>
         <dc:creator>International DOI Foundation</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:doi/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:doi/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:doi/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:doi/reg.xml</dc:identifier>
         <dc:identifier>info:doi/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
@@ -82,8 +82,8 @@
     <record><header><identifier>info:ofi/nam:info:lccn:</identifier><datestamp>2004-01-01</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace of Library of Congress Control Numbers</dc:title>
         <dc:creator>Library of Congress</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:lccn/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:lccn/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:lccn/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:lccn/reg.xml</dc:identifier>
         <dc:identifier>info:lccn/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
@@ -97,16 +97,16 @@
     <record><header><identifier>info:ofi/nam:info:oclcnum:</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace of identifiers assigned by OCLC to records in the WorldCat database</dc:title>
         <dc:creator>OCLC</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:oclcnum/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:oclcnum/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:oclcnum/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:oclcnum/reg.xml</dc:identifier>
         <dc:identifier>info:oclcnum/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
     <record><header><identifier>info:ofi/nam:info:pmid:</identifier><datestamp>2004-12-30</datestamp><setSpec>Core:Namespaces</setSpec><setSpec>Core</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
         <dc:title>Namespace of PubMed Identifiers</dc:title>
         <dc:creator>NCBI</dc:creator>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:pmid/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:pmid/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:pmid/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:pmid/reg.xml</dc:identifier>
         <dc:identifier>info:pmid/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
@@ -115,8 +115,8 @@
         <dc:creator>NISO</dc:creator>
         <dc:date>2004-01-01</dc:date>
         <dc:description>Namespace for identifiers that follow the Serial Item and Contribution Identifier (SICI) scheme (ANSI/NISO Z39.56-1996 Version 2)</dc:description>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sici/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sici/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sici/reg.xml</dc:identifier>
         <dc:identifier>info:sici/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>
@@ -126,8 +126,8 @@
         <dc:date>2004-01-01</dc:date>
         <dc:description>Namespace for identifiers that follow the info:sid scheme, mainly
             used for the identification of the Referrer Entity.</dc:description>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/?metadataPrefix=reg</dc:identifier>
-        <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/.reg</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sid/reg.html</dc:identifier>
+        <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sid/reg.xml</dc:identifier>
         <dc:identifier>info:sid/</dc:identifier>
         <dc:type>Core:Namespaces</dc:type>
     </oai_dc:dc></metadata></record>

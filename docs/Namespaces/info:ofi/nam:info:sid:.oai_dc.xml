@@ -4,8 +4,8 @@
     <dc:date>2004-01-01</dc:date>
     <dc:description>Namespace for identifiers that follow the info:sid scheme, mainly
         used for the identification of the Referrer Entity.</dc:description>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/?metadataPrefix=reg</dc:identifier>
-    <dc:identifier>http://errol.oclc.org/info-uri.info/info:sid/.reg</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sid/reg.html</dc:identifier>
+    <dc:identifier>https://oclc-research.github.io/infoURI-Frozen/info-uri.info/info:sid/reg.xml</dc:identifier>
     <dc:identifier>info:sid/</dc:identifier>
     <dc:type>Core:Namespaces</dc:type>
 </oai_dc:dc></metadata></record></GetRecord></OAI-PMH>
