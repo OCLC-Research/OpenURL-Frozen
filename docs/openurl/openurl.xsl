@@ -330,10 +330,10 @@
         <h2 align="center">
             <xsl:value-of select="oai:repositoryName"/>
         </h2>
-        <table width="100%" border="1" cellspacing="2" cellpadding="0">
+        <!--table width="100%" border="1" cellspacing="2" cellpadding="0">
             <tr><th colspan="2">OAI Identify Response</th></tr>
             <xsl:apply-templates/>
-        </table>
+        </table-->
 
     </xsl:template>
 
@@ -887,8 +887,21 @@
 
     <xsl:template match="dc:type" mode="verbose">
         <tr valign="top">
-            <td width="150"><strong><xsl:value-of select="name()"/></strong></td>
-            <td><a><xsl:attribute name="href"><xsl:text>OAIHandler4?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text><xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
+            <td width="150">
+                <strong>
+                    <xsl:value-of select="name()"/>
+                </strong>
+            </td>
+            <td>
+                <a>
+                    <xsl:attribute name="href">
+                        <!--xsl:text>OAIHandler4?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=</xsl:text>
+                        <xsl:value-of select="."/-->
+                        <xsl:text>../ListRecords.oai_dc.xml</xsl:text>
+                    </xsl:attribute>
+                    <xsl:value-of select="."/>
+                </a>
+            </td>
         </tr>
     </xsl:template>
 
