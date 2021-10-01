@@ -990,12 +990,10 @@
 
     <!-- Template for text nodes -->
     <xsl:template match="text()" mode="verbose">
-        <xsl:if test="string-length(normzlize=space(.)) &gt; 0">
-            <DIV class="e">
-                <SPAN class="b">&#160;</SPAN>
-                <SPAN class="tx"><xsl:value-of select="."/></SPAN>
-            </DIV>
-        </xsl:if>
+        <DIV class="e">
+            <SPAN class="b">&#160;</SPAN>
+            <SPAN class="tx"><xsl:value-of select="."/></SPAN>
+        </DIV>
     </xsl:template>
 
 
