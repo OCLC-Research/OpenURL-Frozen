@@ -790,7 +790,7 @@
         <tr valign="top">
             <td><strong><xsl:value-of select="name()"/></strong></td>
             <td><xsl:value-of select="substring-before(.,$myURL)"/>
-                <a target="_blank"><xsl:attribute name="href"><xsl:text>javascript:location.href='</xsl:text><xsl:value-of select="$myURL"/><xsl:text>'</xsl:text></xsl:attribute><xsl:value-of select="$myURL"/></a><xsl:value-of select="substring-after(.,$myURL)"/>
+                <a target="_blank"><xsl:attribute name="href"><xsl:value-of select="$myURL"/></xsl:attribute><xsl:value-of select="$myURL"/></a><xsl:value-of select="substring-after(.,$myURL)"/>
             </td>
         </tr>
     </xsl:template>
