@@ -774,16 +774,6 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
-                <xsl:when test="substring-after(., 'https:')">
-                    <xsl:choose>
-                        <xsl:when test="substring-before(substring-after(.,'https:'),')')">
-                            <xsl:text>https:</xsl:text><xsl:value-of select="substring-before(substring-after(.,'https:'),')')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>https:</xsl:text><xsl:value-of select="substring-after(.,'https:')"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
         </xsl:variable>
@@ -800,9 +790,6 @@
             <td><strong><xsl:value-of select="name()"/></strong></td>
             <xsl:choose>
                 <xsl:when test="substring(.,1,5)='http:'">
-                    <td><a target="_blank"><xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
-                </xsl:when>
-                <xsl:when test="substring(.,1,5)='https:'">
                     <td><a target="_blank"><xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute><xsl:value-of select="."/></a></td>
                 </xsl:when>
                 <xsl:otherwise>
@@ -833,33 +820,6 @@
                     </xsl:variable>
                     <td>
                         <xsl:value-of select="substring-before(.,'http://')"/>
-                        <a target="_blank">
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="$url"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="$url"/>
-                        </a>
-                        <xsl:value-of select="substring-after(.,$url)" />
-                    </td>
-                </xsl:when>
-            <xsl:choose>
-                <xsl:when test="contains(.,'https://')">
-                    <xsl:variable name="url">
-                        <xsl:variable name="temp">
-                            <xsl:text>https://</xsl:text>
-                            <xsl:value-of select="substring-after(.,'https://')" />
-                        </xsl:variable>
-                        <xsl:choose>
-                            <xsl:when test="contains($temp,')')">
-                                <xsl:value-of select="substring-before($temp,')')" />
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="$temp" />
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:variable>
-                    <td>
-                        <xsl:value-of select="substring-before(.,'https://')"/>
                         <a target="_blank">
                             <xsl:attribute name="href">
                                 <xsl:value-of select="$url"/>
